@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+}
+
+header{
+  
+  /*max-width: 1350px*/
+
+  width: 100vw; 
+  height: 5rem;
+  margin: 0 auto;
+  display: grid;
+  background: #000000;
+  grid-auto-flow: column;
+  grid-template-rows: 100%;
+}
+
+.brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand h1{
+  color: #0ABAB5;
+}
+
+.brand span{
+  color: white;
+  font-size: 2.3rem;
+}
+
+.menuContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.first a{
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.first a:hover{
+  color: #0ABAB5;
+}
+
+.second button{
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 5px;
+  border:none;
+}
+
+.second button:first-child{
+  color: white;
+  background-color: transparent;
+}
+
+.second button:last-child{
+  border-radius: 10%;
+  transition: 0.2s;
+}
+
+.second button:last-child:hover{
+  box-shadow: 10px 10px 20px rgba(129, 216, 208, 0.1);
+  background: #0ABAB5;
+}
+.second button:first-child:hover{
+  color: #0ABAB5;
+}
+
+.burgerContainer{
+  display: none;
+}
+
+.ham{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.bur{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+}
+
+.ger{
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(152, 133, 88);
+  transition: 0.5s ease-in-out;
+}
+
+.q{
+  transform-origin: 0 0;
+}
+
+.e{
+  transform-origin: 0 100%;
+}
+
+.q.a{
+transform:rotate(46.5deg) translate(0, -2px);
+width: 26px;
+}
+
+.w.b{
+  opacity: 0;
+  transform: scale(0);
+}
+
+.e.c{
+  transform:rotate(-45deg) translate(0.5px, 1.5px);
+  width: 28px;  
+}
+
+@media(max-width: 992px){
+  .first a{
+      font-size: 0.8rem;
+  }
+  .second button:last-child{
+      background: #ff5349;
+      color: white;
+  }
+  .second button:last-child:hover{
+      color: #0ABAB5;
+  }
+}
+
+@media(max-width: 768px){
+  body{
+      background: #000000
+  }
+  header{
+      grid-template-columns: 5fr 0.5fr;
+      box-shadow: o 10px 10px rgba(0,0,0,0.1);
+  }
+  .brand{
+      justify-content: flex-start;
+      padding-left: 12%;
+  }
+  .burgerContainer{    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .menuContainer{ 
+      position: absolute;
+      width: 100%;
+      height: fit-content;
+      margin: 0 auto;
+      padding: 30px 0 30px 0;
+      box-sizing: border-box;
+      background: #000000;
+      justify-content: flex-start;
+      align-items: center ;
+      flex-direction: column;
+      z-index: -1;
+      transition: 0.3s;
+      transform: translate(0, -250px);
+  }
+  .menuContainer.show{
+      transform: translate(0,29%);
+  }
+  .first, .second{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  } 
+  @media(max-width:576px){
+      .brand{
+          justify-content: center;
+      }
+  }
+
+  
+
+
+
+  
