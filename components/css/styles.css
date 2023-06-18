@@ -105,7 +105,7 @@ header{
   width: 20px;
   height: 3px;
   border-radius: 3px;
-  background: rgb(152, 133, 88);
+  background: #0ABAB5;
   transition: 0.5s ease-in-out;
 }
 
@@ -137,7 +137,7 @@ width: 26px;
       font-size: 0.8rem;
   }
   .second button:last-child{
-      background: #ff5349;
+      background: #0ABAB5;
       color: white;
   }
   .second button:last-child:hover{
@@ -193,6 +193,11 @@ width: 26px;
       }
   }
 
+.logo{
+  width: 100px; 
+  height: 100px;
+  margin-right: 25px;
+}
   
 
 
